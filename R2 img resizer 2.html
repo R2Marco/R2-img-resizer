@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Resizer</title>
+
+
+
+
+  <link rel="stylesheet" href="estilo.css">
+  <script src="codigo.js" defer></script>
+
+
+
+</head>
+<body>
+
+  <header>
+    <h1>Image Resizer</h1>
+
+
+
+
+  <label for="imageURL">Image URL:</label>
+  <input type="text" id="imageURL" placeholder="Enter Image URL" oninput="resizeImage()">
+
+  
+
+  <label for="scaleRange">Scale:</label>
+  <input type="range" id="scaleRange" min="0.5" max="4" step="0.1" value="1" oninput="resizeImage()">
+
+
+
+  <button onclick="resetImage()">Reset</button>
+
+
+
+
+  </header>
+
+
+  <div id="preview-container">
+    <img id="preview" alt="Preview Image">
+  </div>
+
+
+
+</body>
+</html>
